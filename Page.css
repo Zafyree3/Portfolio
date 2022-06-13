@@ -5,49 +5,64 @@
     font-family: "Gotu", sans-serif;
     scroll-behavior: smooth;
     text-decoration: none;
-}
-ul {
-    list-style: none;
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-}
-body {
-    background-image: url("/Assets/Home.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
     overflow-x: hidden;
 }
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+html, body {
     width: 100vw;
+    height: 100vh;
 }
-#Name {
-    font-size: 5rem;
-    color: #fff;
-    font-weight: bold;
-}
-header {
-    padding-top: 10px;
+.container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    height: 25%;
-    width: fit-content;
-    background: #42455a;
+    justify-content: center;
+    align-items: center;
 }
-a {
-    font-family: "Poppins", sans-serif;
-    padding: 0px 5px 0px 8px;
-    font-size: 1.2  rem;
-    color: #fff;
+.parallax {
+    background-image: url("./Assets/Home.png");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+p {
+    font-size: 1.5rem;
+}
+#NameHeader {
+    font-weight: bold;
+    margin: -2rem;
+}
+#NameSubHeader {
+    font-weight: lighter;
+}
+#WriteDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    padding: 5rem;
+    text-align: left;
+}
+.pushLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
