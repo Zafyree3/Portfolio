@@ -9,6 +9,7 @@
     margin: 0px;
     color: #fff;
     overflow-x: hidden;
+    
 }
 html, body {
     width: 100vw;
@@ -49,7 +50,7 @@ p {
     font-weight: lighter;
 }
 #WriteDiv {
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +60,12 @@ p {
     padding: 5rem;
     text-align: left;
 }
+#About{
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    background-color: #CAE9FF;
+}
 .pushLeft{
     width: 100%;
     display: flex;
@@ -66,3 +73,61 @@ p {
     justify-content: left;
     align-items: center;
 }
+#picThird {
+    flex-basis: 100%;
+}
+#aboutPic {
+    width:100%;
+}
+#headerThird {
+    font-size: 3rem;
+    font-weight: bold;
+    flex-basis: 100%;
+}
+#headerThird > p {
+    color: #1B4965;
+}
+#descThird {
+    flex-basis: 100%;
+    font-size: 2.5rem;
+    color: #1B4965;
+}
+#Experience {
+    height: fit-content;
+}
+#expTitle {
+    height: 70vh;
+    width: 95%;
+    align-items: flex-end;
+}
+#expTitle > h2 {
+    color: #BEE9E8;
+}
+#expDiv {
+    width: 100%;
+    background-color: #BEE9E8;
+    justify-content: space-evenly;
+}
+.row { 
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    margin-block: 2.5rem;
+}
+
+.row > img {
+    height: 33vh;
+    aspect-ratio: 1/1;
+}
+#BG {
+    height: 70vh;
+}
+#Projects{
+    background-color: #1B4965;
+}
+#projTitle {
+    width: 95%;
+    align-items: flex-end;
+}
+
