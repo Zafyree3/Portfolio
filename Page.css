@@ -92,10 +92,10 @@ p {
     font-size: 2.5rem;
     color: #1B4965;
 }
-#Experience {
+#Experience, #Projects {
     height: fit-content;
 }
-#expTitle {
+#expTitle, #projTitle, #othersTitle {
     height: 70vh;
     width: 95%;
     align-items: flex-end;
@@ -111,23 +111,63 @@ p {
 .row { 
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 70%;
     justify-content: space-between;
     margin-block: 2.5rem;
 }
 
 .row > img {
-    height: 33vh;
+    height: 20vh;
     aspect-ratio: 1/1;
 }
-#BG {
-    height: 70vh;
-}
-#Projects{
+#projDiv{
     background-color: #1B4965;
 }
-#projTitle {
-    width: 95%;
-    align-items: flex-end;
+.hscroll {
+    width: 80%;
+    height: 30vh;
+    display: grid;
+    column-gap: 1.2rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 28%;     
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    align-items: center;
 }
-
+.projImg {
+    width:100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.logo {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+.panel {
+    height: 50%;
+    object-fit: cover;
+}
+#aGloveLinks{
+    flex-direction: row;
+    margin-top: 1rem;
+}
+#aGloveLinks > a {
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-inline: 2rem;
+}
+#aGlove {
+    margin-bottom: 1rem;
+}
+#Remi {
+    margin-top: 1rem;
+}
+#othersContainer {
+    background-color: #CAE9FF;
+}
+.certImg {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
