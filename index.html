@@ -6,40 +6,41 @@
 
 <html>
     <body>
+        <div id="navBar" class="container">
+            <div id="navMain" class="nav">
+                <a href="#Home">Home</a>
+                <a href="#aboutCenter">About</a>
+                <a href="#expTitleText">Experience</a>
+                <a href="#projTitleText">Projects</a>
+                <a href="#othersTitleText">Others</a>
+            </div>
+        </div>
+        
         <div id="Home" class="parallax container">
             <h1 id="NameHeader">Irman Zafyree</h1>
             <h3 id="NameSubHeader">Portfolio</h3>
         </div>
-        <!--<div id="WriteDiv" class="container">
-            <div class="pushLeft">
-                <h2>600 Write Up</h2>
-            </div>
-            <p>Artificial Intelligence (AI) has always interested me. 
-                I first used AI in my Sec 3 Computing+ Coursework. 
-                Implementing it into my team’s glove to recognise Sign Language gestures and translate them to letters. 
-                Later, I went to a Python Programming Camp where I learned about reinforcement learning (RL) and insight into the coding industry. 
-                Afterwards, I researched more about AI. I came across Long Short Term Memory (LSTM), a method to predict stocks, which I plan to do soon. 
-                During my research, I found possible careers like data analyst and actuary which align with my interest. 
-            </p>
-        </div> -->
-        <div id="About" class="container">
-            <div id="headerThird" class="container">
-                <p>About Me</p>
-            </div>
-            <div id="picThird" class="container">
-                <img src="./Assets/SmileEdited.jpg" alt="Picture Of Me" id="aboutPic">
-            </div>
-            <div id="descThird" class="container">
-                Jack Of All Trades<br>
-                Master Of None<br>
-                Data Lover<br>
-                Coding Enthusiast<br>
+
+        <div id="aboutCenter" class="parallax centerer">
+            <div id="About" class="container">
+                <div id="headerThird" class="container">
+                    <p>About Me</p>
+                </div>
+                <div id="picThird" class="container">
+                    <img src="./Assets/SmileEdited.jpg" alt="Picture Of Me" id="aboutPic">
+                </div>
+                <div id="descThird" class="container">
+                    Jack Of All Trades<br>
+                    Master Of None<br>
+                    Data Lover<br>
+                    Coding Enthusiast<br>
+                </div>
             </div>
         </div>
 
-        <div id="Experience" class="parallax container">
+        <div id="Experience" class="parallax container centerer">
             <div id="expTitle" class="pushLeft">
-                <h2>Coding Experiences</h2>
+                <h2 id="expTitleText">Coding Experiences</h2>
             </div>
             <div id="expDiv" class="container">
                 <div id="Row1" class="row">
@@ -57,7 +58,7 @@
 
         <div id="Projects" class="parallax container">
             <div id="projTitle" class="pushLeft">
-                <h2>My Projects</h2>
+                <h2 id="projTitleText">My Projects</h2>
             </div>
             <div id="projDiv" class="container">
                 <div id="Remi" class="container">
@@ -72,7 +73,7 @@
                     </div>
                 </div>
                 <div id="Grocemi" class="container">
-                    <h3 style = "font-weight: lighter;">Grocemi</h3>
+                    <h3 style = "font-weight: lighter;">Grocermi</h3>
                     <p>Swift Accelerator Programme</p> <br>
                     <div id="GrocemiImg" class="hscroll">
                         <video src="./Assets/test.mp4" controls class="projImg"></video>
@@ -100,21 +101,21 @@
             </div>
         </div>
 
-        <div id="Others" class="parallax container">
+        <div id="Others" class="parallax container centerer">
             <div id="othersTitle" class="pushLeft">
-                <h2>Other</h2>
+                <h2 id="othersTitleText">Other</h2>
             </div>
             <div id="othersContainer" class="container">
                 <div id="othersDiv" class="hscroll">
-                    <img src="./Assets/Cert1.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert2.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert9.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert3.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert4.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert8.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert5.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert6.jpg" alt="Certificate" class="certImg">
-                    <img src="./Assets/Cert7.jpg" alt="Certificate" class="certImg">
+                    <img src="./Assets/Cert1.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert2.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert9.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert3.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert4.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert8.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert5.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert6.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert7.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
                 </div>
             </div>
         </div>
@@ -123,5 +124,22 @@
             <h1 id="EndHeader">Thank You So Much</h1>
             <p id="EndSubHeader">More Coming Soon</p>
         </div>
+
+        <div id="imgModal" class="modal">
+            <span class="close" onClick="closeModal()">&times;</span>
+            <img class="modal-content" id="ModalImg">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            function openModal(img) {
+                document.getElementById("ModalImg").src = img.src;
+                document.getElementById("caption").innerHTML = img.alt;
+                document.getElementById("imgModal").style.display = "block";
+            }
+            function closeModal() {
+                document.getElementById("imgModal").style.display = "none";
+            }
+        </script>
     </body>
 </html>
