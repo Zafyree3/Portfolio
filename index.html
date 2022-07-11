@@ -2,40 +2,98 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Irman's Portfolio</title>
+    
 </head>
 
 <html>
     <body>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
         <div id="navBar" class="container">
             <div id="navMain" class="nav">
                 <a href="#Home">Home</a>
                 <a href="#aboutCenter">About</a>
                 <a href="#expTitleText">Experience</a>
                 <a href="#projTitleText">Projects</a>
-                <a href="#othersTitleText">Others</a>
+                <a href="#nonTitleText">Non-Acad</a>
+                <a href="#othersTitleText">Certs</a>
             </div>
         </div>
         
         <div id="Home" class="parallax container">
             <h1 id="NameHeader">Irman Zafyree</h1>
             <h3 id="NameSubHeader">Portfolio</h3>
+            <text><i>Scroll down to find out more</i></text>
         </div>
 
         <div id="aboutCenter" class="parallax centerer">
-            <div id="About" class="container">
+            <button class="sideButton" id="leftAboutButton" onClick="aboutLeft()">
+                <
+            </button>
+            <button class="sideButton" id="rightAboutButton" onClick="aboutRight()">
+                >
+            </button>
+            <div id="AboutMe" class="about container">
                 <div id="headerThird" class="container">
                     <p>About Me</p>
                 </div>
                 <div id="picThird" class="container">
                     <img src="./Assets/SmileEdited.jpg" alt="Picture Of Me" id="aboutPic">
                 </div>
-                <div id="descThird" class="container">
-                    Jack Of All Trades<br>
-                    Master Of None<br>
-                    Data Lover<br>
-                    Coding Enthusiast<br>
+                <div id="MeThird" class="container">
+                    <p>"Curiosity is a principle that carries its pleasures, as well as its pains, along with it."</p>
                 </div>
             </div>
+
+            <div id="AboutLeader" class="about container">
+                <div id="headerThird" class="container">
+                    <p>My Leadership</p>
+                </div>
+                <div id="picThird" class="container">
+                    <img src="./Assets/RoboInvestEdit.jpeg" alt="Picture Of Me" id="aboutPic">
+                </div>
+                <div id="leaderdescThird" class="container">
+                    <b><span class="leaderYear">Sec 3</span></b>
+                    <p>ACE Leader</p><br><p>Club President (Robotics @APEX)</p><br>
+                    <div class="line"></div>
+                    <b><span class="leaderYear">Sec 2</span></b>
+                    <p>ACE Leader</p><br><p>Jr ExCo (Robotics @APEX)</p><br>
+                    <div class="line"></div>
+                    <b><span class="leaderYear">Sec 1</span></b>
+                    <p>Class Chairperson</p><br>
+                </div>
+            </div>
+
+            <div id="AboutStrength" class="about container">
+                <div id="headerThird" class="container">
+                    <p>My Strength</p>
+                </div>
+                <div id="picThird" class="container">
+                    <img src="./Assets/FixingMe.jpeg" alt="Picture Of Me" id="aboutPic">
+                </div>
+                <div id="descThird" class="container">
+                    Positivity<br>
+                    Winning Others Over<br>
+                    Includer<br>
+                    Activator<br>
+                    Futuristic<br>
+                </div>
+            </div>
+
+            <div id="AboutMore" class="about container">
+                <div id="headerThird" class="container">
+                    <p>More About Me</p>
+                </div>
+                <div id="picThird" class="container">
+                    <img src="./Assets/darkMe.jpg" alt="Picture Of Me" id="aboutPic">
+                </div>
+                <div id="MoreThird" class="container">
+                    <p>I am a very curious person, always finding out more about something that piques my interest. It is due to this that I was expose to so many things, coding, leading, marketing, speaking and etc. I will always look forward to tomorrow as they will be something to dive deeper into.</p>
+                    <div class="line"></div>
+                    <p>My hobbies are that I enjoy reading, coding and bowling. However, it always changes every so often. Like before, I enjoyed playing the guitar, baking and cycling, which I still occasionally do, but not as often.</p>
+                </div>
+            </div>
+
         </div>
 
         <div id="Experience" class="parallax container centerer">
@@ -101,21 +159,52 @@
             </div>
         </div>
 
+        <div id="Non-Acad" class="parallax container">
+            <div id="NonTitle" class="pushLeft">
+                <h2 id="nonTitleText">Non-Academic</h2>
+            </div>
+            <div id="NonDiv" class="container">
+                <div id="NonScroll" class="hscroll">
+                    <div class="servDiv">
+                        <h3>Phong Thahn Commune</h3>
+                        <p>Community Service (2019)</p>
+                        <img src="./Assets/vietname.jpg">
+                    </div>
+                    <div class="servDiv">
+                        <h3>ACE FoodDrive</h3>
+                        <p>Surveyed The Resident (2021)</p>
+                        <img src="./Assets/FoodDrivecopty.jpg">
+                    </div>
+                    <div class="servDiv">
+                        <h3>SCS@ACE</h3>
+                        <p>Media Team (2021)</p>
+                        <video src="./Assets/test2.mp4" controls class="projImg"></video>
+                    </div>
+                    <div id="LABB" class="servDiv">
+                        <h3>Learning Alliance. Beyond Boarders</h3>
+                        <p>Facilitator (2021)</p>
+                        <img src="./Assets/LABB.png">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
         <div id="Others" class="parallax container centerer">
             <div id="othersTitle" class="pushLeft">
-                <h2 id="othersTitleText">Other</h2>
+                <h2 id="othersTitleText">Certificates</h2>
             </div>
             <div id="othersContainer" class="container">
                 <div id="othersDiv" class="hscroll">
-                    <img src="./Assets/Cert1.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert2.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert9.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert3.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert4.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert8.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert5.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert6.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
-                    <img src="./Assets/Cert7.jpg" alt="Certificate" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert1.jpg" alt="Perse Coding Round 2" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert2.jpg" alt="SST Character Award" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert9.jpg" alt="Rakan Bahasa of SST" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert3.jpg" alt="4th Place for FLL in Robot Perfomance" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert4.jpg" alt="2nd Place for FLL in Innovative Solution" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert8.jpg" alt="Participated in MakeX SG" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert5.jpg" alt="Participated in APYRC" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert6.jpg" alt="Participated in SASMO" class="certImg" onClick="openModal(this)">
+                    <img src="./Assets/Cert7.jpg" alt="Participated in IDE" class="certImg" onClick="openModal(this)">
                 </div>
             </div>
         </div>
@@ -123,6 +212,9 @@
         <div id="End" class="parallax container">
             <h1 id="EndHeader">Thank You So Much</h1>
             <p id="EndSubHeader">More Coming Soon</p>
+            <p>Email me @ <b>irman.zafyree.work@gmail.com</b></p>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="irman-zafyree-profil" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://sg.linkedin.com/in/irman-zafyree-profil?trk=profile-badge"></a></div>
+        
         </div>
 
         <div id="imgModal" class="modal">
@@ -132,14 +224,37 @@
         </div>
 
         <script>
+            
             function openModal(img) {
                 document.getElementById("ModalImg").src = img.src;
                 document.getElementById("caption").innerHTML = img.alt;
-                document.getElementById("imgModal").style.display = "block";
+                document.getElementById("imgModal").style.display = "flex";
             }
             function closeModal() {
                 document.getElementById("imgModal").style.display = "none";
             }
+            aboutIndex = 0;
+            aboutPage = ["AboutMe","AboutLeader","AboutStrength", "AboutMore"]
+            function about() {
+                for (i = 0; i < aboutPage.length; i++) {
+                    if (aboutIndex == i) {
+                        document.getElementById(aboutPage[i]).style.display = "flex";
+                    } else {
+                        document.getElementById(aboutPage[i]).style.display = "none";
+                    }
+                }
+            }
+            function aboutLeft() {
+                console.log(aboutIndex);
+                aboutIndex = (aboutIndex - 1 + aboutPage.length) % aboutPage.length;
+                console.log(aboutIndex);
+                about()
+            }
+            function aboutRight() {
+                aboutIndex = (aboutIndex + 1 + aboutPage.length) % aboutPage.length;
+                about()
+            }
+
         </script>
     </body>
 </html>
