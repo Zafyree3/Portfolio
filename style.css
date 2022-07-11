@@ -353,6 +353,7 @@ p {
 .servDiv > h3{
     color: #1B4965;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 #LABB > h3{
     color: #1B4965;
@@ -361,4 +362,5 @@ p {
 .servDiv > p{
     color: #1B4965;
     font-size: 1.5rem;
+    overflow: hidden;
 }
